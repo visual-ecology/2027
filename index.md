@@ -21,7 +21,7 @@ reaction:
 
 ## Oxford 2027
 
-Organised by Christian Drerup: more info to come!
+Organised by Christian Drerup: more info soon!
 
 ![](/assets/Oxford_images/Magdalen.jpg)
 
