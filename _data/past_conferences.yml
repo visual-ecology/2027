@@ -11,7 +11,7 @@
   location: "Edinburgh"
   host: "ASAB winter conference"
   url: "https://asabwinter.github.io//2025/"
-  note: "We organised the ASAB Winter conference with a Sensory Ecology theme"
+  note: "ASAB Winter conference with a Sensory Ecology theme"
 
 - year: "2024"
   location: "Penryn"
@@ -36,6 +36,12 @@
   host: "University of Exeter"
   url: "https://www.visual-ecology.com/"
   note: "Antipredator Coloration Symposium"
+
+- year: "2015"
+  location: "Liverpool"
+  host: "The Applied Vision Association, Liverpool"
+  url: "https://www.theava.net/meetings.php?s=camocon-2015-in-liverpool/"
+  note: "AVA conference CamoCon"
 
 - year: "2013"
   location: "Bristol"
