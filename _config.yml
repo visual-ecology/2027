@@ -3,15 +3,15 @@
 # lives in _data/conference.yml instead, so rolling over to a new year never
 # means touching this file.
 title: "Visual Ecology"
-tagline: "An international conference series on visual ecology"
+tagline: "A conference series on visual ecology"
 description: >-
   The Visual Ecology conference series: registration, schedule, keynote speakers,
   venue and organisers for the upcoming meeting, plus past conferences.
 # Change these if the site moves to a custom domain (e.g. url: "https://www.example.org",
 # baseurl: ""). On GitHub Pages the deploy workflow sets baseurl automatically.
-url: "https://troscianko.github.io"
+url: "https://visual-ecology.github.io"
 baseurl: ""
-repository: "troscianko/visual-ecology"
+repository: "visual-ecology/2027"
 
 # Homepage news grid (only shown once there are posts in _posts/)
 recent_posts_count: 6
