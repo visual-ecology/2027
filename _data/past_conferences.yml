@@ -25,8 +25,20 @@
   url: "https://www.visual-ecology.com/"
   note: "Antipredator Coloration Symposium"
 
+- year: "2018"
+  location: "Bristol"
+  host: "University of Bristol"
+  url: "https://camolab.com/"
+  note: "CamoCon"  
+
 - year: "2016"
   location: "Penryn"
   host: "University of Exeter"
   url: "https://www.visual-ecology.com/"
   note: "Antipredator Coloration Symposium"
+
+- year: "2013"
+  location: "Bristol"
+  host: "University of Bristol"
+  url: "https://camolab.com/"
+  note: "CamoCon"
