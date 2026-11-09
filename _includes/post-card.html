@@ -1,0 +1,17 @@
+{% comment %}
+  Usage: {% include post-card.html post=some_post %}
+{% endcomment %}
+{% assign post = include.post %}
+<a class="post-card" href="{{ post.url | relative_url }}">
+  {% if post.image %}
+    {% assign card_thumb = post.image | replace: "/assets/images/", "/assets/images/derived/thumb/" %}
+    <div class="thumb">
+      <img src="{{ card_thumb | relative_url }}" alt="{{ post.title | escape }}" loading="lazy">
+    </div>
+  {% endif %}
+  <div class="body">
+    <span class="date">{{ post.date | date: "%-d %B %Y" }}</span>
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.excerpt | default: post.description | strip_html | truncate: 200 }}</p>
+  </div>
+</a>

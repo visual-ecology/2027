@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<section class="page-content wrap">
+  <div class="blurb">
+    {{ content }}
+    <div class="schedule-grid">
+      {% for day in site.data.schedule %}
+        <div class="schedule-column">
+          <h2 class="schedule-day">{{ day.day }}</h2>
+          <ol class="schedule">
+            {% for session in day.sessions %}
+              <li class="schedule-item schedule-item--{{ session.type | default: 'talk' }}">
+                <span class="schedule-time">{{ session.time }}</span>
+                <div class="schedule-body">
+                  <div class="schedule-title">{{ session.title }}</div>
+                  {% if session.speaker or session.location %}
+                    <div class="schedule-meta">
+                      {{ session.speaker }}{% if session.speaker and session.location %} · {% endif %}{{ session.location }}
+                    </div>
+                  {% endif %}
+                  {% if session.details %}
+                    <div class="schedule-details">{{ session.details | markdownify }}</div>
+                  {% endif %}
+                </div>
+              </li>
+            {% endfor %}
+          </ol>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+  .schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    align-items: start;
+  }
+
+  @media (max-width: 768px) {
+    .schedule-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

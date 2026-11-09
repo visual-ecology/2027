@@ -1,0 +1,12 @@
+{% comment %}
+  Key dates list from key_dates in _data/conference.yml.
+  Usage: {% include key-dates.html %}
+{% endcomment %}
+<dl class="key-dates">
+  {% for item in site.data.conference.key_dates %}
+    <div>
+      <dt>{{ item.label }}</dt>
+      <dd>{{ item.date }}</dd>
+    </div>
+  {% endfor %}
+</dl>

@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{% assign conf = site.data.conference %}
+<section class="page-content wrap">
+  <div class="blurb">
+    <div class="notice">
+      <div>
+        <strong>{{ conf.name }}</strong> · {{ conf.dates }} · {{ conf.location }}
+      </div>
+      {% include register-button.html %}
+    </div>
+
+    {{ content }}
+
+    {% if conf.fees.size > 0 %}
+      <h2>Fees</h2>
+      <table class="fees-table">
+        <thead>
+          <tr><th>Category</th><th>Early bird</th><th>Standard</th></tr>
+        </thead>
+        <tbody>
+          {% for fee in conf.fees %}
+            <tr><td>{{ fee.category }}</td><td>{{ fee.early }}</td><td>{{ fee.standard }}</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+
+    <h2>Key dates</h2>
+    {% include key-dates.html %}
+  </div>
+</section>

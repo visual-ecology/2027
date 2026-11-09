@@ -1,0 +1,81 @@
+---
+layout: default
+---
+{% assign conf = site.data.conference %}
+<section class="hero wrap">
+  <div class="content-width">
+  <div class="hero-main">
+    {% if conf.logo and conf.logo != "" %}
+      <img class="hero-logo" src="{{ conf.logo | relative_url }}" alt="{{ conf.name | escape }}">
+    {% endif %}
+    <p class="hero-tagline">{{ page.subtitle | default: site.tagline }}</p>
+    <p class="hero-facts"><strong>{{ conf.dates }}</strong> · {{ conf.location }}</p>
+    <div class="hero-actions">
+      {% include register-button.html page=true %}
+      <a class="btn" href="{{ '/schedule/' | relative_url }}">View the schedule</a>
+    </div>
+  </div>
+  <aside class="hero-dates">
+    <h2>Key dates</h2>
+    {% include key-dates.html %}
+  </aside>
+  </div>
+</section>
+
+<section class="page-content page-content--home wrap">
+  <div class="blurb">
+    {{ content }}
+  </div>
+</section>
+
+{% if site.data.past_conferences.size > 0 %}
+<section class="home-section wrap" id="past-conferences">
+<div class="content-width">
+  <h2>Past conferences</h2>
+  <ul class="past-list">
+    {% for meeting in site.data.past_conferences %}
+      <li>
+        <span class="past-year">{{ meeting.year }}</span>
+        <div>
+          {% if meeting.url and meeting.url != "" %}
+            <a href="{{ meeting.url }}">{{ meeting.location }}</a>
+          {% else %}
+            {{ meeting.location }}
+          {% endif %}
+          {% if meeting.host and meeting.host != "" %}<span class="muted"> · {{ meeting.host }}</span>{% endif %}
+          {% if meeting.note and meeting.note != "" %}<div class="muted small">{{ meeting.note }}</div>{% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+</section>
+{% endif %}
+
+{% if site.data.groups.size > 0 %}
+<section class="home-section wrap" id="key-groups">
+<div class="content-width">
+  <h2>Key groups</h2>
+  <div class="card-grid">
+    {% for group in site.data.groups %}
+      {% if group.url and group.url != "" %}<a class="info-card" href="{{ group.url }}">{% else %}<div class="info-card">{% endif %}
+        {% if group.logo and group.logo != "" %}
+          <img class="info-card-logo" src="{{ group.logo | relative_url }}" alt="" loading="lazy">
+        {% endif %}
+        <h3>{{ group.name }}</h3>
+        {% if group.description %}{{ group.description | markdownify }}{% endif %}
+      {% if group.url and group.url != "" %}</a>{% else %}</div>{% endif %}
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% endif %}
+
+{% if site.posts.size > 0 %}
+<section class="home-section wrap">
+<div class="content-width">
+  {% assign recent_posts = site.posts | slice: 0, site.recent_posts_count %}
+  {% include carousel.html posts=recent_posts heading="News" style="grid" %}
+</div>
+</section>
+{% endif %}

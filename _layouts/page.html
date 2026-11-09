@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{% include page-title.html %}
+
+<section class="page-content wrap">
+  <div class="blurb">
+    {{ content }}
+  </div>
+
+  {% if page.gallery_dir %}
+    <h2>Gallery</h2>
+    {% include gallery.html dir=page.gallery_dir thumb_width=page.gallery_thumb_width %}
+  {% endif %}
+</section>

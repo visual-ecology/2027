@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<section class="page-content wrap">
+  <div class="blurb">
+    {{ content }}
+  </div>
+
+  <div class="content-width">
+  {% for committee in site.data.organisers %}
+    <h2>{{ committee.group }}</h2>
+    <ul class="people-grid">
+      {% for person in committee.people %}
+        <li class="person">
+          {% include person-photo.html person=person %}
+          <div class="person-name">
+            {% if person.url and person.url != "" %}
+              <a href="{{ person.url }}">{{ person.name }}</a>
+            {% else %}
+              {{ person.name }}
+            {% endif %}
+          </div>
+          {% if person.role and person.role != "" %}<div class="person-role">{{ person.role }}</div>{% endif %}
+          {% if person.affiliation %}<div class="muted small">{{ person.affiliation }}</div>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,13 @@
+{% comment %}
+  Round headshot for speaker/organiser cards, falling back to the person's initials
+  when no photo is set. Photos under /assets/images/ use the auto-generated thumbnail.
+  Usage: {% include person-photo.html person=speaker %}
+{% endcomment %}
+{% assign person = include.person %}
+{% if person.photo and person.photo != "" %}
+  {% assign person_thumb = person.photo | replace: "/assets/images/", "/assets/images/derived/thumb/" %}
+  <img class="person-photo" src="{{ person_thumb | relative_url }}" alt="{{ person.name | escape }}" loading="lazy">
+{% else %}
+  {% assign name_parts = person.name | split: " " %}
+  <div class="person-photo person-photo--initials" aria-hidden="true">{{ name_parts.first | slice: 0 | upcase }}{% if name_parts.size > 1 %}{{ name_parts.last | slice: 0 | upcase }}{% endif %}</div>
+{% endif %}

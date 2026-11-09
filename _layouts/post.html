@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% assign post_eyebrow = page.date | date: "%-d %B %Y" %}
+{% include page-title.html eyebrow=post_eyebrow %}
+
+<article class="post-body wrap">
+  {% if page.image %}
+    {% assign hero_src = page.image | replace: "/assets/images/", "/assets/images/derived/display/" %}
+    {% if page.banner %}
+      {% assign banner_ratio = page.banner_ratio | default: "3 / 1" %}
+      <div class="post-hero post-hero--banner" style="--banner-ratio: {{ banner_ratio }};">
+        <img src="{{ hero_src | relative_url }}" alt="{{ page.title | escape }}">
+      </div>
+    {% else %}
+      <div class="post-hero">
+        <img src="{{ hero_src | relative_url }}" alt="{{ page.title | escape }}">
+      </div>
+    {% endif %}
+  {% endif %}
+
+  <div class="content">
+    {{ content }}
+  </div>
+</article>

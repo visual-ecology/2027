@@ -1,0 +1,32 @@
+# Past meetings in the series, listed on the homepage (newest first).
+# When a conference finishes, add it to the top of this list before rolling
+# _data/conference.yml over to the next year.
+#   year     - required
+#   location - city / country
+#   host     - hosting institution(s) or group (optional)
+#   url      - link to that year's website or archive (optional)
+#   note     - one-line extra detail, e.g. "Joint meeting with …" (optional)
+
+- year: "2025"
+  location: "Edinburgh"
+  host: "ASAB winter conference"
+  url: "https://asabwinter.github.io//2025/"
+  note: "We organised the ASAB Winter conference with a Sensory Ecology theme"
+
+- year: "2024"
+  location: "Penryn"
+  host: "University of Exeter"
+  url: "https://www.visual-ecology.com/"
+  note: "Antipredator Coloration Symposium"
+
+- year: "2019"
+  location: "Penryn"
+  host: "University of Exeter"
+  url: "https://www.visual-ecology.com/"
+  note: "Antipredator Coloration Symposium"
+
+  - year: "2016"
+  location: "Penryn"
+  host: "University of Exeter"
+  url: "https://www.visual-ecology.com/"
+  note: "Antipredator Coloration Symposium"

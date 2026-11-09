@@ -1,0 +1,46 @@
+# The current (upcoming) conference. This is the first file to edit when rolling
+# the site over to a new year — the header, homepage, footer, Register and Venue
+# pages all read from here. Anything marked TBC is a placeholder.
+
+name: "Visual Ecology 2027"
+year: 2027
+logo: /assets/logos/visual-ecology-2027.png   # leave blank to show the name as text instead
+dates: "7/8th July 2027"                # free text, e.g. "6–9 July 2027"
+location: "Magdalen College, University of Oxford"                  # short form for the homepage/footer, e.g. "Falmouth, UK"
+email: "christian.drerup [at] magd.ox.ac.uk"                     # general enquiries address, shown in the footer
+
+venue:
+  name: "Grove Auditorium, Magdalen College"
+  address: "Longwall Street, Oxford, OX1 4AU"
+  map_url: "https://maps.app.goo.gl/Z17FrtM3FohP59VMA"                    # link to OpenStreetMap / Google Maps; leave blank to hide
+
+# status: "soon" (not open yet), "open" or "closed" — controls the Register button.
+registration:
+  status: "soon"
+  url: ""                        # external booking form (e.g. university online store)
+  opens: "TBC"
+
+# Shown on the homepage and Register page, in this order.
+key_dates:
+  - label: "Registration opens"
+    date: "TBC"
+  - label: "Abstract submission deadline"
+    date: "TBC"
+  - label: "Early-bird registration deadline"
+    date: "TBC"
+  - label: "Conference"
+    date: "July 7th & 8th 2027"
+
+# Shown as a table on the Register page. Add or remove rows freely.
+fees:
+  - category: "Student / early career"
+    early: "TBC"
+    standard: "TBC"
+  - category: "Full"
+    early: "TBC"
+    standard: "TBC"
+
+# Who to contact about anything covered by the code of conduct.
+conduct_contact:
+  name: "Christian Drerup"
+  email: "christian.drerup [at] magd.ox.ac.uk"

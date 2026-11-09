@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<section class="page-content wrap">
+  <div class="blurb">
+    {{ content }}
+  </div>
+
+  <div class="content-width">
+  <ul class="speaker-list">
+    {% for speaker in site.data.keynotes %}
+      <li class="speaker">
+        {% include person-photo.html person=speaker %}
+        <div class="speaker-text">
+          <h2>
+            {% if speaker.url and speaker.url != "" %}
+              <a href="{{ speaker.url }}">{{ speaker.name }}</a>
+            {% else %}
+              {{ speaker.name }}
+            {% endif %}
+          </h2>
+          {% if speaker.affiliation %}<div class="muted">{{ speaker.affiliation }}</div>{% endif %}
+          {% if speaker.talk and speaker.talk != "" %}<p class="speaker-talk">“{{ speaker.talk }}”</p>{% endif %}
+          {% if speaker.bio %}<div class="speaker-bio">{{ speaker.bio | markdownify }}</div>{% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+  </div>
+</section>

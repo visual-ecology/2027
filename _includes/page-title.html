@@ -1,0 +1,20 @@
+{% comment %}
+  Compact supplementary strip below the header. The page's actual title (plus the
+  reaction-diffusion canvas, when page.reaction is set) lives in the header itself
+  (_includes/header.html) so it's visible in the nav bar on every page. This include
+  just renders whatever a layout passes alongside that: eyebrow (e.g. a post's date)
+  and/or subtitle (the homepage tagline). Renders nothing when given neither.
+
+  Params: eyebrow (opt-in — only shown when the including layout explicitly passes
+  one; front matter's own `eyebrow:` is intentionally NOT used as a fallback here),
+  subtitle (optional).
+{% endcomment %}
+{% assign eyebrow_text = include.eyebrow %}
+{% if eyebrow_text or include.subtitle %}
+<section class="page-subhead">
+  <div class="wrap">
+    {% if eyebrow_text %}<p class="eyebrow">{{ eyebrow_text }}</p>{% endif %}
+    {% if include.subtitle %}<p class="page-subhead-subtitle">{{ include.subtitle }}</p>{% endif %}
+  </div>
+</section>
+{% endif %}

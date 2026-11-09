@@ -1,0 +1,60 @@
+# Site settings — things that stay the same from one conference to the next.
+# Everything specific to a single year (dates, location, registration links…)
+# lives in _data/conference.yml instead, so rolling over to a new year never
+# means touching this file.
+title: "Visual Ecology"
+tagline: "An international conference series on visual ecology"
+description: >-
+  The Visual Ecology conference series: registration, schedule, keynote speakers,
+  venue and organisers for the upcoming meeting, plus past conferences.
+# Change these if the site moves to a custom domain (e.g. url: "https://www.example.org",
+# baseurl: ""). On GitHub Pages the deploy workflow sets baseurl automatically.
+url: "https://troscianko.github.io"
+baseurl: ""
+repository: "troscianko/visual-ecology"
+
+# Homepage news grid (only shown once there are posts in _posts/)
+recent_posts_count: 6
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+permalink: /news/:year/:slug/
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Order matters: later entries win when a file matches more than one scope,
+# so the generic (untyped) default comes first and the type-scoped ones after it.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules
+  - "*.gemspec"
+
+# Navigation data lives in _data/navigation.yml

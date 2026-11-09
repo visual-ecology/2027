@@ -1,0 +1,14 @@
+{% assign conf = site.data.conference %}
+<footer class="site-footer">
+  <div class="wrap">
+  <div class="content-width">
+    <div>{{ conf.name }} · {{ conf.dates }} · {{ conf.location }}</div>
+    <div class="footer-links">
+      {% if conf.email and conf.email != "TBC" %}<a href="mailto:{{ conf.email }}">{{ conf.email }}</a>{% endif %}
+      <a href="{{ '/code-of-conduct/' | relative_url }}">Code of Conduct</a>
+      {% if site.posts.size > 0 %}<a href="{{ '/feed.xml' | relative_url }}">News feed</a>{% endif %}
+      {% if site.repository %}<a href="https://github.com/{{ site.repository }}">Website source</a>{% endif %}
+    </div>
+  </div>
+  </div>
+</footer>

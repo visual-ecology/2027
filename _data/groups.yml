@@ -1,0 +1,26 @@
+# Key groups, societies and networks behind the series — shown as cards on the homepage.
+#   name        - required
+#   url         - their website (optional; makes the card a link)
+#   logo        - e.g. /assets/logos/example-group.png (optional)
+#   description - one or two sentences (Markdown allowed, but no links — the card
+#                 itself already links to url)
+
+- name: "Exeter Visual Ecology"
+  url: "https://www.visual-ecology.com/"
+  logo: "/assets/logos/EVE-logo-400.png"
+  description: "The visual ecology labs of Jolyon Troscianko, Laura Kelley and Martin Stevens, based at the Univerity of Exeter's Penryn Campus in Cornwall"
+
+- name: "CamoLab"
+  url: "https://camolab.com/"
+  logo: "/assets/logos/camolab-logo.png"
+  description: "A group of camouflage and visual ecology researchers at the Univeristy of Bristol"
+
+- name: "Evolutionary & Sensory Ecology - Swansea"
+  url: "https://www.swansea.ac.uk/bioscience/research-and-impact/evolutionary-and-sensory-ecology-lab-ease/"
+  logo: ""
+  description: "A research group led by Will Allen investigating sensory systems, signalling, camouflage and life history, at scales from single organisms to global systems, based at the University of Swansea"
+
+- name: "Bristol Vision Institute"
+  url: "https://www.bristol.ac.uk/vision-institute/"
+  logo: "/assets/logos/BVI-logo.png"
+  description: "The home of vision science research at the University of Bristol, fostering collaboraiton and research across science, engineering, arts and medicine"

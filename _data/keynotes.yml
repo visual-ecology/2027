@@ -1,0 +1,22 @@
+# Keynote speakers, shown on the Keynote Speakers page in this order.
+#   name        - required
+#   affiliation - institution (optional)
+#   photo       - e.g. /assets/images/people/firstname-lastname.jpg (optional; any size,
+#                 thumbnails are generated automatically — square-ish crops look best)
+#   url         - personal / lab page (optional)
+#   talk        - talk title (optional — leave out until it's confirmed)
+#   bio         - short biography (Markdown allowed)
+
+- name: "Speaker to be announced"
+  affiliation: "Institution TBC"
+  photo: ""
+  url: ""
+  talk: ""
+  bio: "Placeholder — a short biography of the speaker and their research."
+
+- name: "Speaker to be announced"
+  affiliation: "Institution TBC"
+  photo: ""
+  url: ""
+  talk: ""
+  bio: "Placeholder — a short biography of the speaker and their research."
