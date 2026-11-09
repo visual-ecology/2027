@@ -21,7 +21,9 @@ reaction:
 
 ## Oxford 2027
 
-| Organised by Christian Drerup: more info to come! | ![](/assets/Oxford_images/Magdalen.jpg)  |
+Organised by Christian Drerup: more info to come!
+
+![](/assets/Oxford_images/Magdalen.jpg)
 
 > Link to the [keynote speakers]({{ '/keynote-speakers/' | relative_url }}),
 > [venue]({{ '/venue/' | relative_url }}) and [registration]({{ '/register/' | relative_url }})
