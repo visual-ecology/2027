@@ -6,7 +6,7 @@ excerpt: "Where the conference is held, and how to get there."
 ---
 
 {% assign venue = site.data.conference.venue %}
-**{{ venue.name }}**<br>
+## {{ venue.name }}
 {{ venue.address }}
 {% if venue.map_url != "" %}<br><a href="{{ venue.map_url }}" target="_blank" rel="noopener noreferrer">View on a map</a>{% endif %}
 
@@ -34,11 +34,3 @@ The Grove Auditorium can be accessed via the college's Wall Gate entrance on Lon
 
 **For international attendees:** Oxford does not have a major international airport, but is accessible from several UK airports, including London Heathrow, Gatwick, Stansted and Luton, as well as Birmingham and Bristol. Direct coach connections to Oxford are available from Heathrow and Gatwick via [the Airline](https://www.theairlineoxford.co.uk/), while other airports can be reached using combinations of train and coach services. Alternatively, visitors travelling from mainland Europe may consider the [Eurostar](https://www.eurostar.com/uk-en) to London St Pancras International, from where onward connections to Oxford are available by train or coach.
 
-## Accommodation
-
-> TODO: Recommended hotels / student accommodation, any discount codes, booking deadlines.
-
-## Accessibility
-
-> TODO: Step-free access, accessible toilets, quiet rooms, hearing loops, and who to contact
-> about specific needs.

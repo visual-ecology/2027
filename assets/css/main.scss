@@ -113,7 +113,7 @@ p { margin: 0 0 1em; }
   max-width: 100%;
 }
 .title-hero-text {
-  color: var(--accent-green);
+  color: #B5CFA8;
   // Fluid between 2rem (at a 400px viewport) and 2.4rem (at 1500px — the
   // same breakpoint as .site-header .wrap's own max-width above), so growth
   // finishes exactly when the header's flex row stops getting wider too. A
@@ -145,7 +145,7 @@ p { margin: 0 0 1em; }
 .nav-toggle {
   display: none;
   background: none;
-  color: var(--accent-green);
+  color: #B5CFA8;
   border: 1px solid rgba(185, 248, 85, 0.4);
   border-radius: 6px;
   padding: 0.4rem 0.6rem;
@@ -173,7 +173,7 @@ p { margin: 0 0 1em; }
   text-decoration: none;
   font-size: 0.92rem;
   font-weight: 600;
-  color: var(--accent-green);
+  color: #B5CFA8;
 }
 .main-nav a:hover,
 .main-nav .active > a {
@@ -186,7 +186,7 @@ p { margin: 0 0 1em; }
   content: "▾";
   font-size: 0.7em;
   margin-left: 0.3em;
-  color: var(--accent-green);
+  color: #B5CFA8;
 }
 .dropdown {
   list-style: none;
@@ -462,7 +462,8 @@ p { margin: 0 0 1em; }
   align-items: start;
 }
 .hero-logo {
-  width: min(350px, 100%);
+  width: min(600px, 90vw);
+  height: auto;
   margin-bottom: 1.25rem;
 }
 .hero-tagline {
@@ -848,4 +849,183 @@ a.info-card:hover {
   background: var(--grey-150);
   color: var(--grey-700) !important;
   cursor: default;
+}
+
+.oxford-section {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.oxford-text {
+  flex: 1;
+}
+
+.oxford-image {
+  flex: 1;
+}
+
+.oxford-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Stack text and image on phones */
+@media (max-width: 700px) {
+  .oxford-section {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+
+.oxford-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.oxford-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 18px;
+
+  background: #111;
+  color: #fff !important;
+
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+
+  border-radius: 6px;
+
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.oxford-button:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   Visual Ecology animated eye logo
+   ========================================= */
+
+.eye-logo {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  gap: 0;
+  color: #FFFFFF;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.eye-logo-eye {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 0.78em;
+  height: 0.84em;
+  margin: 0 0.015em;
+  border-radius: 50%;
+  background: #FFFFFF;
+  overflow: hidden;
+  vertical-align: middle;
+  flex-shrink: 0;
+  transform-origin: center;
+  animation: eye-logo-blink 6s infinite;
+}
+
+.eye-logo-pupil {
+  position: relative;
+  width: 58%;
+  height: 58%;
+  border-radius: 50%;
+  background: #193C35;
+  transition: transform 0.12s ease-out;
+}
+
+.eye-logo-pupil::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  width: 27%;
+  height: 27%;
+  background: white;
+  border-radius: 50%;
+}
+
+@keyframes eye-logo-blink {
+  0%, 43%, 47%, 100% {
+    transform: scaleY(1);
+  }
+
+  45% {
+    transform: scaleY(0.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eye-logo-eye {
+    animation: none;
+  }
+
+  .eye-logo-pupil {
+    transition: none;
+  }
+}
+
+
+.title-hero-text.eye-logo {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  color: white;
+  font-size: clamp(1.2rem, 1.6vw + 0.45rem, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+}
+
+.ve-eye {
+  display: inline-block;
+  width: 0.91em;
+  height: 0.91em;
+  flex: 0 0 0.91em;
+}
+
+.ve-eye svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.ve-pupil {
+  transition: none;
+  transform-box: view-box;
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ve-pupil {
+    transition: none;
+  }
+}
+
+.ve-eyelid {
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: scaleY(0);
 }

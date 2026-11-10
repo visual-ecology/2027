@@ -4,7 +4,7 @@
 
 name: "Visual Ecology 2027"
 year: 2027
-logo: /assets/logos/visual-ecology-2027.png   # leave blank to show the name as text instead
+logo: /assets/Oxford_images/logo27.png   # leave blank to show the name as text instead
 dates: "7/8th July 2027"                # free text, e.g. "6–9 July 2027"
 location: "Magdalen College, University of Oxford"                  # short form for the homepage/footer, e.g. "Falmouth, UK"
 email: "christian.drerup [at] magd.ox.ac.uk"                     # general enquiries address, shown in the footer
@@ -23,13 +23,13 @@ registration:
 # Shown on the homepage and Register page, in this order.
 key_dates:
   - label: "Registration opens"
-    date: "TBC"
+    date: "1 Dec 2026"
   - label: "Abstract submission deadline"
-    date: "TBC"
-  - label: "Early-bird registration deadline"
-    date: "TBC"
+    date: "2 April 2027"
+  - label: "Registration deadline"
+    date: "5 May 2027"
   - label: "Conference"
-    date: "July 7th & 8th 2027"
+    date: "7/8 July 2027"
 
 # Shown as a table on the Register page. Add or remove rows freely.
 fees:
