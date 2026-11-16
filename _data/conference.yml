@@ -22,7 +22,7 @@ registration:
 
 # Shown on the homepage and Register page, in this order.
 key_dates:
-  - label: "Registration opens"
+  - label: "Registration and Abstract submission opens"
     date: "1 Dec 2026"
   - label: "Abstract submission deadline"
     date: "2 April 2027"

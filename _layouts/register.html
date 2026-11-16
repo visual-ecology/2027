@@ -13,6 +13,8 @@ layout: default
 
     {{ content }}
 
+    {% comment %}
+
     {% if conf.fees.size > 0 %}
       <h2>Fees</h2>
       <table class="fees-table">
@@ -26,6 +28,8 @@ layout: default
         </tbody>
       </table>
     {% endif %}
+
+    {% endcomment %}
 
     <h2>Key dates</h2>
     {% include key-dates.html %}

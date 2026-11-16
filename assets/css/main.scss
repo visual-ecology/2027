@@ -1029,3 +1029,44 @@ a.info-card:hover {
   transform-origin: center;
   transform: scaleY(0);
 }
+
+
+
+/* Registration page: two-column layout */
+
+.registration-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+  align-items: stretch;
+}
+
+.registration-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1.75rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  text-align: center;
+}
+
+.registration-card h2 {
+  margin-bottom: 1rem;
+}
+
+.registration-card .oxford-button {
+  margin-top: auto;
+  align-self: center;
+  width: auto;
+}
+
+/* Stack columns on smaller screens */
+
+@media (max-width: 700px) {
+  .registration-grid {
+    grid-template-columns: 1fr;
+  }
+}

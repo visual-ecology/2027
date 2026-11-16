@@ -20,7 +20,7 @@ excerpt: "Our commitment to a welcoming, safe and inclusive conference."
 - Look out for one another, and let the organisers know if someone needs help.
 - Do not photograph or record slides or posters that are labelled with a 'no social media' logo, and ask for permission if unsure:
 
-![No social media](/assets/logos/no-social-media.png)
+![No social media]({{ '/assets/logos/no-social-media.png' | relative_url }})
 
 ## Unacceptable behaviour
 
