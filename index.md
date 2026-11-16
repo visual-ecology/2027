@@ -28,6 +28,8 @@ reaction:
       ecology and evolution of visual systems, we look forward to welcoming you to Oxford
       in July 2027.
       <br><br>
+      And the best part: <strong>NO REGISTRATION FEE</strong>
+      <br><br>
       On behalf of the Visual Ecology 2027 Organising Committee
       <br>
       <em>- Christian Drerup</em>
