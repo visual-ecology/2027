@@ -7,12 +7,21 @@
 #   talk        - talk title (optional — leave out until it's confirmed)
 #   bio         - short biography (Markdown allowed)
 
-- name: "Speaker to be announced"
-  affiliation: "Institution TBC"
-  photo: ""
-  url: ""
+- name: "Prof Richard Merrill"
+  affiliation: "Ludwig Maximilian University of Munich, Germany"
+  photo: "/assets/Oxford_images/Merrill.jpeg"
+  url: "https://www.bio.lmu.de/en/research/research-fields/evolutionary-biology/merrill-lab/"
   talk: ""
-  bio: "Placeholder — a short biography of the speaker and their research."
+  bio: >-
+    Richard Merrill is an evolutionary biologist at Ludwig Maximilian
+    University of Munich (LMU), Germany. His research investigates the
+    evolution of visual systems and visually guided mating behaviours,
+    using *Heliconius* butterflies as a model system. His group explores
+    how visual mating preferences evolve, their genetic and neural
+    underpinnings, and how they contribute to reproductive isolation
+    and speciation. In addition, his research examines the evolution
+    of insect eye morphology, particularly how natural selection shapes
+    variation in eye size and visual acuity across closely related species.
 
 - name: "Speaker to be announced"
   affiliation: "Institution TBC"
