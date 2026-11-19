@@ -27,19 +27,19 @@
       title: "Talk session 2"
       type: talk
     - time: "13:00"
-      title: "Lunch"
+      title: "Lunch (provided)"
       type: break
     - time: "14:00"
       title: "Talk session 3"
       type: talk
-    - time: "15:30"
+    - time: "15:15"
       title: "Coffee & Poster session 2"
       type: poster
-    - time: "16:00"
+    - time: "15:45"
       title: "Talk session 4"
       type: talk
-    - time: "16:30"
-      title: "Keynote #1 — speaker TBC"
+    - time: "16:15"
+      title: "Keynote #1 — Richard Merrill"
       type: keynote
     - time: "17:00"
       title: "Drinks reception"
@@ -63,20 +63,20 @@
       title: "Talk session 6"
       type: talk
     - time: "13:00"
-      title: "Lunch"
+      title: "Lunch (provided)"
       type: break
     - time: "14:00"
-      title: "Talk session 7"
-      type: talk
-    - time: "15:00"
       title: "Keynote #2 — speaker TBC"
       type: keynote
-    - time: "15:30"
+    - time: "14:45"
+      title: "Talk session 7"
+      type: talk
+    - time: "15:15"
       title: "Coffee & Poster session 2"
       type: poster
-    - time: "16:00"
+    - time: "15:45"
       title: "Talk session 8"
       type: talk
-    - time: "17:45"
+    - time: "17:00"
       title: "Closing remarks"
       type: admin

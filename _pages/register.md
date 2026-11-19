@@ -19,7 +19,7 @@ excerpt: "How to register for the conference, fees and key dates."
     </p>
 
     <p>
-      Please follow the link below to register your attendance.
+      As places at the conference are limited, we kindly ask that you register only if you genuinely intend to attend. Please avoid registering provisionally if your attendance is still uncertain, as this may prevent others from securing a place.
     </p>
 
     <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=G96VzPWXk0-0uv5ouFLPkXOOqrNLWT5DhkJpTThP02JUQllGR1FITlFIUEMySFM1OVdSVjJNWENLOC4u"
